@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+    <div class="alert alert-success" role="alert">
+        {{ ress }}
+    </div>
+
+{% endblock %}
+
+{% block btn %}
+    <a href="{{  url_for('data_includes') }}">
+        <button type="button" class="btn btn-warning">CSVデータの読み込み</button>
+    </a>
+{% endblock %}
